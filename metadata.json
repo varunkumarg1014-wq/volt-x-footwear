@@ -1,0 +1,6 @@
+{
+  "name": "VOLT X Multi-Brand Footwear",
+  "description": "VOLT X sports footwear storefront featuring 18 signature shoes from Nike, Adidas, and Puma built with HTML5, CSS3, and Vanilla JavaScript.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOLT X — Nike, Adidas &amp; Puma Footwear | Push Beyond Limits</title>
+    <meta
+      name="description"
+      content="VOLT X multi-brand sports footwear store featuring 18 signature shoes from Nike, Adidas, and Puma. Engineered for Speed. Designed for Victory."
+    />
+    <meta property="og:title" content="VOLT X — Nike, Adidas & Puma Footwear" />
+    <meta
+      property="og:description"
+      content="Explore 18 high-performance athletic shoes across Nike, Adidas, and Puma. Push Beyond Limits."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand-wordmark" aria-label="VOLT X Home">
+          VOLT <span class="brand-accent">X</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#collections" class="nav-link">Collections</a>
+          <a href="#virat-collection" class="nav-link">Virat Kohli Edit</a>
+          <a href="#featured" class="nav-link">All Shoes</a>
+          <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+          <a href="#best-sellers" class="nav-link">Best Sellers</a>
+          <a href="#technology" class="nav-link">Technology</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            class="icon-action-btn"
+            id="themeToggleBtn"
+            aria-label="Switch to light theme"
+            title="Toggle Dark / Light theme"
+          >
+            <svg class="icon-svg icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-svg icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="icon-action-btn wishlist-trigger"
+            id="openWishlistBtn"
+            aria-label="Open wishlist"
+          >
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="action-count" id="wishlistCount">0</span>
+          </button>
+
+          <button
+            type="button"
+            class="cart-trigger"
+            id="openCartBtn"
+            aria-label="Open shopping cart"
+          >
+            <svg
+              class="icon-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Cart</span>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+
+          <button
+            type="button"
+            class="hamburger-btn"
+            id="hamburgerBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <nav class="mobile-nav-list" aria-label="Mobile navigation">
+          <a href="#collections" class="mobile-nav-link">Collections</a>
+          <a href="#virat-collection" class="mobile-nav-link">Virat Kohli Signature Edit</a>
+          <a href="#featured" class="mobile-nav-link">All Shoes (25)</a>
+          <a href="#new-arrivals" class="mobile-nav-link">New Arrivals</a>
+          <a href="#best-sellers" class="mobile-nav-link">Best Sellers</a>
+          <a href="#technology" class="mobile-nav-link">Technology</a>
+          <a href="#faq" class="mobile-nav-link">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-ambient-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-content animate-hero-left">
+            <div class="limited-kicker">
+              <span class="kicker-accent">Limited Edition Drop</span>
+              <span class="kicker-sep" aria-hidden="true">/</span>
+              <span class="kicker-meta">Nike · Adidas · Puma</span>
+            </div>
+
+            <h1 class="hero-headline">PUSH BEYOND LIMITS.</h1>
+
+            <p class="hero-subtitle">
+              Engineered for Speed. Designed for Victory.
+            </p>
+
+            <p class="hero-lead">
+              Curated performance footwear from Nike, Adidas, and Puma—featuring 25 flagship running, basketball, cricket turf, gym training, and Virat Kohli signature silhouettes.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#featured" class="btn btn-primary">
+                <span>SHOP NOW</span>
+                <svg
+                  class="btn-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#new-arrivals" class="btn btn-secondary">
+                EXPLORE COLLECTION
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual animate-hero-right">
+            <div class="hero-shoe-stage" id="heroShoeStage">
+              <div class="hero-3d-card" id="hero3dCard">
+                <canvas
+                  id="heroThreeCanvas"
+                  class="three-shoe-canvas"
+                  aria-label="Interactive real-time 3D sports sneaker GLB model. Drag to rotate 360 degrees."
+                ></canvas>
+
+                <!-- GLB Loading Indicator -->
+                <div class="model-loading-overlay" id="heroModelLoading" role="status" aria-live="polite">
+                  <span class="loading-spinner" aria-hidden="true"></span>
+                  <span class="loading-title">Loading 3D Sneaker Model...</span>
+                  <span class="loading-progress" id="heroLoadingProgress">Initializing GLTFLoader</span>
+                </div>
+
+                <!-- Graceful Error / WebGL Fallback -->
+                <div class="webgl-fallback" id="heroWebglFallback" hidden>
+                  <img
+                    src="/src/assets/images/voltx_hero_shoe_1795258532995.jpg"
+                    alt="Flagship black and electric orange performance running shoe"
+                    class="fallback-shoe-img"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="fallback-notice">
+                    <strong>3D GLB Model Fallback Active</strong>
+                    <span id="heroFallbackReason">Could not load the 3D GLB model. Use "Load .GLB" below to import a valid .glb/.gltf sneaker file, or view studio photography.</span>
+                  </div>
+                </div>
+
+                <span class="stage-angle-badge" id="heroAngleBadge">360° VIEW · 0° · RIGHT</span>
+                <span class="stage-model-badge" id="heroModelBadge">Nike Air Zoom Volt Carbon · Obsidian / Volt Orange</span>
+              </div>
+
+              <!-- Interactive 3D Controls Dock -->
+              <div class="stage-hud-panel" id="hero3dControls">
+                <div class="stage-hud-top">
+                  <div class="stage-hud-actions">
+                    <button type="button" class="stage-spin-btn is-spinning" id="heroPlayPauseBtn" aria-pressed="true">
+                      Pause Rotation
+                    </button>
+                    <button type="button" class="stage-inspect-btn" id="heroResetViewBtn">
+                      Reset View
+                    </button>
+                    <label class="stage-glb-upload-btn" title="Import a custom .glb or .gltf 3D sneaker model">
+                      <span>Load .GLB</span>
+                      <input type="file" id="heroGlbInput" accept=".glb,.gltf" hidden />
+                    </label>
+                    <button type="button" class="stage-inspect-btn" id="openHero3dBtn">
+                      Inspect Spec
+                    </button>
+                  </div>
+
+                  <div class="stage-speed-control">
+                    <label for="heroSpeedRange" class="speed-label">Speed</label>
+                    <input
+                      type="range"
+                      id="heroSpeedRange"
+                      min="0.2"
+                      max="2.5"
+                      step="0.1"
+                      value="1.0"
+                      aria-label="360-degree rotation speed"
+                    />
+                    <span class="speed-value" id="heroSpeedValue">1.0×</span>
+                  </div>
+                </div>
+
+                <!-- Real Brand Product Switcher in 3D -->
+                <div class="stage-hud-products">
+                  <span class="hud-row-label">3D Model</span>
+                  <div class="variant-pill-group" id="heroBrandProductGroup" role="group" aria-label="Featured brand product in 3D">
+                    <button type="button" class="cam-view-btn is-active" data-hero-shoe="nike-air-zoom-volt">Nike Air Zoom</button>
+                    <button type="button" class="cam-view-btn" data-hero-shoe="nike-pegasus-flyknit">Nike Pegasus</button>
+                    <button type="button" class="cam-view-btn" data-hero-shoe="adidas-adizero-pro">Adidas Adizero</button>
+                    <button type="button" class="cam-view-btn" data-hero-shoe="puma-deviate-nitro-3">Puma Nitro 3</button>
+                    <button type="button" class="cam-view-btn" data-hero-shoe="puma-virat-match-spike">Virat one8 Pro</button>
+                  </div>
+                </div>
+
+                <!-- Live 3D Colourway Customizer -->
+                <div class="stage-hud-colors">
+                  <div class="hero-color-meta">
+                    <img
+                      src="/src/assets/images/voltx_hero_shoe_1795258532995.jpg"
+                      alt="Active brand shoe preview"
+                      id="heroRealShoeThumb"
+                      class="hud-shoe-thumb"
+                      referrerpolicy="no-referrer"
+                    />
+                    <span class="hud-row-label">Colour:</span>
+                    <span class="hero-active-color-name" id="heroActiveColorName">Obsidian / Volt Orange</span>
+                    <span class="hero-active-price" id="heroActivePrice">₹5,499</span>
+                  </div>
+                  <div class="hero-color-actions">
+                    <div class="swatch-group" id="heroColorSwatches" role="group" aria-label="Change 3D shoe colourway"></div>
+                    <label class="custom-color-chip" title="Pick a custom accent colour on the 3D sneaker">
+                      <input type="color" id="heroCustomColorInput" value="#ff5500" aria-label="Custom 3D shoe colour" />
+                      <span>Custom</span>
+                    </label>
+                    <button type="button" class="btn-add-cart hero-quick-add-btn" id="heroQuickAddBtn">
+                      + Bag
+                    </button>
+                  </div>
+                </div>
+
+                <div class="stage-hud-views" role="group" aria-label="Quick 360-degree camera angles">
+                  <div class="cam-view-group">
+                    <button type="button" class="cam-view-btn" data-cam-view="front">Front</button>
+                    <button type="button" class="cam-view-btn is-active" data-cam-view="right">Right</button>
+                    <button type="button" class="cam-view-btn" data-cam-view="back">Back</button>
+                    <button type="button" class="cam-view-btn" data-cam-view="left">Left</button>
+                    <button type="button" class="cam-view-btn" data-cam-view="top">Top</button>
+                    <button type="button" class="cam-view-btn" data-cam-view="bottom">Bottom</button>
+                  </div>
+                  <span class="stage-hint">Drag 360° · Scroll zoom</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Spec Strip -->
+        <div class="container hero-spec-strip">
+          <div class="spec-item">
+            <span class="spec-value">25</span>
+            <span class="spec-label">Curated Signature Models</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Virat Pro</span>
+            <span class="spec-label">one8 × Puma Match &amp; Gym Edit</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">87%</span>
+            <span class="spec-label">Energy Return Cushioning</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">20% OFF</span>
+            <span class="spec-label">First Order Code VOLT20</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURATED COLLECTIONS SHOWCASE -->
+      <section class="section-block alt-surface-section" id="collections">
+        <div class="container">
+          <div class="section-header-row reveal-on-scroll">
+            <div>
+              <p class="section-eyebrow">Shop By Discipline</p>
+              <h2 class="section-title">SIGNATURE COLLECTIONS</h2>
+            </div>
+            <a href="#virat-collection" class="section-link">Explore Virat Kohli's Pro Edit →</a>
+          </div>
+
+          <div class="collections-grid reveal-on-scroll">
+            <article class="collection-card collection-virat">
+              <div class="collection-card-media">
+                <img src="/src/assets/images/virat_match_spike_1795259837319.jpg" alt="Virat Kohli one8 Match Spike Collection" referrerpolicy="no-referrer" />
+              </div>
+              <div class="collection-card-body">
+                <span class="collection-tag">Athlete Spotlight · 3 Models</span>
+                <h3>Virat Kohli Pro Edit</h3>
+                <p>Match spikes, turf agility cleats, and heavy conditioning trainers worn by Virat Kohli.</p>
+                <a href="#virat-collection" class="collection-cta">View Virat's Rotation →</a>
+              </div>
+            </article>
+
+            <article class="collection-card">
+              <div class="collection-card-media">
+                <img src="/src/assets/images/nike_alpha_marathon_1795259836986.jpg" alt="Carbon Marathon Racing Collection" referrerpolicy="no-referrer" />
+              </div>
+              <div class="collection-card-body">
+                <span class="collection-tag">Carbon Propulsion · 10 Models</span>
+                <h3>Marathon &amp; Speed Lab</h3>
+                <p>Featherweight carbon-plated runners engineered for 10K, half-marathon, and track splits.</p>
+                <button type="button" class="collection-cta" data-jump-category="Running">Filter Running →</button>
+              </div>
+            </article>
+
+            <article class="collection-card">
+              <div class="collection-card-media">
+                <img src="/src/assets/images/nike_metcon_training_1795259854577.jpg" alt="Cricket Turf and Gym Training Collection" referrerpolicy="no-referrer" />
+              </div>
+              <div class="collection-card-body">
+                <span class="collection-tag">Strength &amp; Turf · 5 Models</span>
+                <h3>Cricket &amp; Gym Training</h3>
+                <p>Locked-down heel stability, rope-wrap sidewalls, and multi-surface grip for peak conditioning.</p>
+                <button type="button" class="collection-cta" data-jump-category="Training">Filter Training →</button>
+              </div>
+            </article>
+
+            <article class="collection-card">
+              <div class="collection-card-media">
+                <img src="/src/assets/images/shoe_high_top_flight_1795258656528.jpg" alt="Hardwood Court and Street Heritage Collection" referrerpolicy="no-referrer" />
+              </div>
+              <div class="collection-card-body">
+                <span class="collection-tag">Court &amp; Street · 10 Models</span>
+                <h3>Basketball &amp; Lifestyle</h3>
+                <p>Explosive hardwood mid-tops and full-grain leather heritage sneakers built for daily wear.</p>
+                <button type="button" class="collection-cta" data-jump-category="Basketball">Filter Court →</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIRAT KOHLI SIGNATURE ROTATION SECTION -->
+      <section class="section-block virat-section" id="virat-collection">
+        <div class="container">
+          <div class="virat-hero-banner reveal-on-scroll">
+            <div class="virat-banner-copy">
+              <p class="section-eyebrow">one8 × Puma · Athlete Worn</p>
+              <h2 class="virat-headline">VIRAT KOHLI SIGNATURE SHOES</h2>
+              <p class="virat-lead">
+                Built for relentless match intensity, explosive pitch sprints, and 5 AM strength sessions. Explore the three high-traction silhouettes Virat Kohli relies on across international cricket, turf drills, and gym conditioning.
+              </p>
+              <div class="virat-usage-pills">
+                <span class="usage-chip">01 · Match Pitch Spikes</span>
+                <span class="usage-chip">02 · Gym &amp; Sprint Conditioning</span>
+                <span class="usage-chip">03 · Tour Cleat &amp; Agility</span>
+              </div>
+            </div>
+            <div class="virat-banner-action">
+              <button type="button" class="btn btn-primary" id="filterViratBtn">
+                Shop Virat's Rotation in Catalog
+              </button>
+            </div>
+          </div>
+
+          <div class="virat-grid" id="viratKohliGrid"></div>
+        </div>
+      </section>
+
+      <!-- 2. FULL 25-SHOE COLLECTION WITH FILTERS, SEARCH & SORT -->
+      <section class="section-block featured-section" id="featured">
+        <div class="container">
+          <div class="section-header-row reveal-on-scroll">
+            <div>
+              <p class="section-eyebrow">Official Multi-Brand Catalog</p>
+              <h2 class="section-title">ALL 25 SIGNATURE SHOES</h2>
+            </div>
+
+            <p class="catalog-counter" id="catalogCounter">Showing 25 of 25 shoes</p>
+          </div>
+
+          <div class="catalog-toolbar reveal-on-scroll">
+            <div class="filter-rows">
+              <!-- Brand Filter Tabs -->
+              <div class="filter-bar" role="tablist" aria-label="Filter shoes by brand">
+                <button type="button" class="filter-btn is-active" data-brand="all" role="tab" aria-selected="true">
+                  All Brands (25)
+                </button>
+                <button type="button" class="filter-btn" data-brand="Nike" role="tab" aria-selected="false">
+                  Nike (8)
+                </button>
+                <button type="button" class="filter-btn" data-brand="Adidas" role="tab" aria-selected="false">
+                  Adidas (8)
+                </button>
+                <button type="button" class="filter-btn" data-brand="Puma" role="tab" aria-selected="false">
+                  Puma (9)
+                </button>
+              </div>
+
+              <!-- Category Filter Tabs -->
+              <div class="filter-bar category-bar" role="tablist" aria-label="Filter shoes by category">
+                <button type="button" class="cat-btn is-active" data-category="all" role="tab" aria-selected="true">
+                  All Categories
+                </button>
+                <button type="button" class="cat-btn" data-category="Running" role="tab" aria-selected="false">
+                  Running
+                </button>
+                <button type="button" class="cat-btn" data-category="Training" role="tab" aria-selected="false">
+                  Training &amp; Cricket
+                </button>
+                <button type="button" class="cat-btn" data-category="Basketball" role="tab" aria-selected="false">
+                  Basketball
+                </button>
+                <button type="button" class="cat-btn" data-category="Casual" role="tab" aria-selected="false">
+                  Casual
+                </button>
+                <button type="button" class="cat-btn" data-category="Lifestyle" role="tab" aria-selected="false">
+                  Lifestyle
+                </button>
+                <button type="button" class="cat-btn" data-category="ViratKohli" role="tab" aria-selected="false">
+                  Virat Kohli Edit
+                </button>
+              </div>
+            </div>
+
+            <!-- Search & Sort Controls -->
+            <div class="toolbar-inputs">
+              <label for="searchInput" class="sr-only">Search products by name</label>
+              <input
+                type="search"
+                id="searchInput"
+                class="toolbar-search"
+                placeholder="Search shoe, brand, or Virat..."
+                aria-label="Search products by name"
+              />
+
+              <label for="sortSelect" class="sr-only">Sort products</label>
+              <select id="sortSelect" class="toolbar-select" aria-label="Sort products by price or popularity">
+                <option value="popular">Sort: Most Popular</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+
+          <div class="empty-catalog" id="emptyCatalog" hidden>
+            <p class="empty-title">No shoes matched your active search or filters.</p>
+            <button type="button" class="btn btn-secondary" id="resetFiltersBtn">
+              Reset All Filters
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. NEW ARRIVALS SECTION -->
+      <section class="section-block alt-surface-section" id="new-arrivals">
+        <div class="container">
+          <div class="section-header-row reveal-on-scroll">
+            <div>
+              <p class="section-eyebrow">Just Landed · Season 2026</p>
+              <h2 class="section-title">NEW ARRIVALS</h2>
+            </div>
+            <a href="#featured" class="section-link">View Full 25-Shoe Lineup →</a>
+          </div>
+          <div class="spotlight-grid" id="newArrivalsGrid"></div>
+        </div>
+      </section>
+
+      <!-- 4. LIMITED EDITION PROMOTIONAL BANNER -->
+      <section class="limited-banner reveal-on-scroll" aria-label="Limited edition drop">
+        <div class="container limited-inner">
+          <div class="limited-copy">
+            <p class="limited-label">Limited Edition Carbon Series · Only 250 Pairs</p>
+            <h2 class="limited-headline">NIKE AIR ZOOM VOLT CARBON</h2>
+            <p class="limited-desc">
+              Hand-numbered aerospace carbon midsole with dual-chamber propulsion and electric orange reflective weave.
+            </p>
+          </div>
+          <div class="limited-actions">
+            <button type="button" class="btn btn-primary" id="inspectLimitedBtn">
+              Inspect Limited Drop
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. BEST SELLERS SECTION -->
+      <section class="section-block" id="best-sellers">
+        <div class="container">
+          <div class="section-header-row reveal-on-scroll">
+            <div>
+              <p class="section-eyebrow">Highest Athlete Rating</p>
+              <h2 class="section-title">BEST SELLERS</h2>
+            </div>
+            <a href="#featured" class="section-link">Compare All Models →</a>
+          </div>
+          <div class="spotlight-grid" id="bestSellersGrid"></div>
+        </div>
+      </section>
+
+      <!-- 6. RECENTLY VIEWED PRODUCTS (Shown Dynamically) -->
+      <section class="section-block alt-surface-section" id="recentlyViewedSection" hidden>
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <p class="section-eyebrow">Your Browsing History</p>
+              <h2 class="section-title">RECENTLY VIEWED</h2>
+            </div>
+            <button type="button" class="clear-history-btn" id="clearHistoryBtn">
+              Clear History
+            </button>
+          </div>
+          <div class="recently-grid" id="recentlyViewedGrid"></div>
+        </div>
+      </section>
+
+      <!-- 7. PRODUCT TECHNOLOGY SECTION -->
+      <section class="section-block tech-section" id="technology">
+        <div class="container">
+          <div class="section-header-stack reveal-on-scroll">
+            <p class="section-eyebrow">Innovation Architecture</p>
+            <h2 class="section-title">SHOE TECHNOLOGY</h2>
+          </div>
+
+          <div class="tech-grid">
+            <article class="tech-card reveal-on-scroll">
+              <div class="tech-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                  <line x1="16" y1="8" x2="2" y2="22"></line>
+                  <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                </svg>
+              </div>
+              <h3 class="tech-title">Ultra Lightweight Design</h3>
+              <p class="tech-desc">
+                Nitrogen-infused chassis trims dead weight down to 198 grams for rapid leg turnover and minimal fatigue.
+              </p>
+            </article>
+
+            <article class="tech-card reveal-on-scroll">
+              <div class="tech-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="tech-title">Advanced Cushioning</h3>
+              <p class="tech-desc">
+                Dual-density rebound foam compresses cleanly at heel strike and snaps back with 87% vertical energy return.
+              </p>
+            </article>
+
+            <article class="tech-card reveal-on-scroll">
+              <div class="tech-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
+                </svg>
+              </div>
+              <h3 class="tech-title">Breathable Material</h3>
+              <p class="tech-desc">
+                Laser-perforated 3D monofilament weave drives continuous convective airflow across high-heat foot zones.
+              </p>
+            </article>
+
+            <article class="tech-card reveal-on-scroll">
+              <div class="tech-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="tech-title">Superior Grip Technology</h3>
+              <p class="tech-desc">
+                Micro-lugged high-abrasion rubber tread delivers locked-in wet asphalt and hardwood cornering traction.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. SPECIAL 20% OFF PROMOTIONAL CAMPAIGN -->
+      <section class="promo-banner reveal-on-scroll" aria-label="20% off first order promotion">
+        <div class="container promo-inner">
+          <div class="promo-copy">
+            <p class="promo-code-line">Special Campaign · Code VOLT20</p>
+            <h2 class="promo-headline">STEP INTO YOUR NEXT LEVEL.</h2>
+            <p class="promo-sub">GET 20% OFF YOUR FIRST ORDER.</p>
+          </div>
+          <div class="promo-action">
+            <button type="button" class="btn btn-white" id="promoShopBtn">
+              <span>SHOP NOW &amp; APPLY 20% OFF</span>
+              <svg
+                class="btn-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. CUSTOMER REVIEWS -->
+      <section class="section-block reviews-section" id="reviews">
+        <div class="container">
+          <div class="section-header-stack reveal-on-scroll">
+            <p class="section-eyebrow">Athlete Verified</p>
+            <h2 class="section-title">CUSTOMER REVIEWS</h2>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card reveal-on-scroll">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="review-quote">
+                “Shaved four minutes off my half-marathon personal best in the Nike Vaporfly Carbon. The forefoot snap feels effortless even after kilometer 16.”
+              </blockquote>
+              <div class="review-author">
+                <p class="author-name">Aarav Mehta</p>
+                <p class="author-role">Distance Runner · Mumbai</p>
+              </div>
+            </article>
+
+            <article class="review-card reveal-on-scroll">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="review-quote">
+                “Adidas Adizero Pro gives unbelievable energy return on concrete track workouts. My legs feel completely fresh after sprint sessions.”
+              </blockquote>
+              <div class="review-author">
+                <p class="author-name">Riya Kapoor</p>
+                <p class="author-role">Track Sprinter · Bengaluru</p>
+              </div>
+            </article>
+
+            <article class="review-card reveal-on-scroll">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="review-quote">
+                “The Puma Deviate Nitro colorway turns heads everywhere. Super breathable during humid runs and grips wet pavement cleanly.”
+              </blockquote>
+              <div class="review-author">
+                <p class="author-name">Kabir Sharma</p>
+                <p class="author-role">Fitness Coach · New Delhi</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. EXPANDABLE FAQ SECTION -->
+      <section class="section-block faq-section" id="faq">
+        <div class="container faq-container">
+          <div class="section-header-stack reveal-on-scroll">
+            <p class="section-eyebrow">Support &amp; Sizing</p>
+            <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+          </div>
+
+          <div class="faq-list" id="faqList">
+            <div class="faq-item reveal-on-scroll">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>How do I choose the right UK size across Nike, Adidas, and Puma?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>All 18 silhouettes follow true-to-size UK athletic lasts. For wide feet or thick marathon socks, we recommend selecting half a size up or choosing UK 9/10 for extra forefoot splay.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>How does the 20% OFF first-order code (VOLT20) work?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Click the 20% OFF promotional banner or check the "Apply VOLT20" option inside your shopping cart drawer. The 20% discount calculates automatically on your entire order subtotal.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>Can I compare technical specs between Nike, Adidas, and Puma models?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Yes. Click "Compare" on up to 3 shoe cards across any brand, then open the Compare Tray at the bottom of the screen to review weight, drop, cushioning, and pricing side by side.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>Are my shopping cart and wishlist saved if I refresh the page?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Yes. Your shopping bag items, wishlist favorites, recently viewed shoes, and Dark/Light theme preference are saved locally in your browser using localStorage.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>What is your trial and return policy on performance footwear?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Every pair includes a 30-day wear guarantee and free size exchanges so you can verify comfort and traction on road or court with zero risk.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. NEWSLETTER SECTION -->
+      <section class="section-block newsletter-section" id="newsletter">
+        <div class="container newsletter-box reveal-on-scroll">
+          <p class="section-eyebrow">Early Drop Access</p>
+          <h2 class="newsletter-headline">JOIN THE VOLT X MOVEMENT.</h2>
+          <p class="newsletter-sub">
+            Get priority access to limited-edition Nike, Adidas, and Puma drops plus 20% off your first pair.
+          </p>
+
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <div class="input-group">
+              <label for="newsletterEmail" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="newsletterEmail"
+                name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required
+              />
+              <button type="submit" class="btn btn-primary">
+                Subscribe
+              </button>
+            </div>
+            <p class="form-feedback" id="newsletterFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- 12. FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="brand-wordmark">
+            VOLT <span class="brand-accent">X</span>
+          </a>
+          <p class="footer-tagline">
+            PUSH BEYOND LIMITS. Multi-brand athletic footwear hub featuring 18 flagship Nike, Adidas, and Puma performance silhouettes.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Shop Brands</h3>
+          <ul class="footer-links">
+            <li><a href="#featured" data-footer-brand="Nike">Nike Collection</a></li>
+            <li><a href="#featured" data-footer-brand="Adidas">Adidas Collection</a></li>
+            <li><a href="#featured" data-footer-brand="Puma">Puma Collection</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Contact Studio</h3>
+          <ul class="footer-contact">
+            <li>14 Innovation Park, Lower Parel, Mumbai</li>
+            <li>support@voltx-footwear.example</li>
+            <li>+91 22 4890 2100</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Follow Us</h3>
+          <div class="social-links">
+            <a href="#newsletter" aria-label="VOLT X Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#newsletter" aria-label="VOLT X X Twitter" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="#newsletter" aria-label="VOLT X YouTube" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 VOLT X Athletics. All rights reserved.</p>
+        <p>Nike · Adidas · Puma Official Storefront</p>
+      </div>
+    </footer>
+
+    <!-- Floating Compare Tray (Appears when >= 1 shoe added to compare) -->
+    <div class="compare-tray" id="compareTray" hidden>
+      <div class="compare-tray-info">
+        <span class="compare-tray-title">Compare (<span id="compareTrayCount">0</span>/3)</span>
+        <div class="compare-tray-chips" id="compareTrayNames"></div>
+      </div>
+      <div class="compare-tray-actions">
+        <button type="button" class="btn-tray-clear" id="clearCompareBtn">Clear</button>
+        <button type="button" class="btn btn-primary btn-tray-open" id="openCompareModalBtn">
+          Compare Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Back To Top Button -->
+    <button
+      type="button"
+      class="back-to-top"
+      id="backToTopBtn"
+      aria-label="Back to top"
+      hidden
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <!-- Slide-Over Shopping Cart Drawer -->
+    <div class="cart-backdrop" id="cartBackdrop" hidden>
+      <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+        <div class="cart-header">
+          <h2 id="cartDrawerTitle">YOUR VOLT X BAG</h2>
+          <button type="button" class="cart-close-btn" id="closeCartBtn" aria-label="Close cart">
+            ✕
+          </button>
+        </div>
+
+        <div class="cart-body" id="cartItemsContainer"></div>
+
+        <div class="cart-footer" id="cartFooter">
+          <div class="promo-toggle-row">
+            <label class="promo-checkbox-label">
+              <input type="checkbox" id="applyVolt20" />
+              <span>Apply First-Order Discount (VOLT20 · 20% Off)</span>
+            </label>
+          </div>
+          <div class="cart-totals">
+            <div class="total-row">
+              <span>Subtotal</span>
+              <span id="cartSubtotal">₹0</span>
+            </div>
+            <div class="total-row discount-row" id="discountRow" hidden>
+              <span>VOLT20 Discount (-20%)</span>
+              <span id="cartDiscount">-₹0</span>
+            </div>
+            <div class="total-row total-final">
+              <span>Total</span>
+              <span id="cartTotal">₹0</span>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-full" id="checkoutBtn">
+            Complete Order
+          </button>
+          <p class="checkout-status" id="checkoutStatus" role="status" aria-live="polite"></p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Slide-Over Wishlist Drawer -->
+    <div class="cart-backdrop" id="wishlistBackdrop" hidden>
+      <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="wishlistDrawerTitle">
+        <div class="cart-header">
+          <h2 id="wishlistDrawerTitle">SAVED WISHLIST</h2>
+          <button type="button" class="cart-close-btn" id="closeWishlistBtn" aria-label="Close wishlist">
+            ✕
+          </button>
+        </div>
+        <div class="cart-body" id="wishlistItemsContainer"></div>
+      </aside>
+    </div>
+
+    <!-- Product Detail Modal with Multi-Image Gallery & 3D Studio Turntable -->
+    <div class="modal-3d-backdrop" id="shoe3dModal" hidden>
+      <div class="modal-3d-dialog" role="dialog" aria-modal="true" aria-labelledby="modal3dTitle">
+        <button type="button" class="modal-3d-close" id="close3dModalBtn" aria-label="Close product details">
+          ✕
+        </button>
+
+        <div class="modal-3d-grid">
+          <div class="stage-3d-panel">
+            <div class="modal-view-switcher" role="tablist" aria-label="Product visualization mode">
+              <button type="button" class="mode-switch-btn is-active" id="modalMode3dBtn" role="tab" aria-selected="true">
+                3D Interactive View
+              </button>
+              <button type="button" class="mode-switch-btn" id="modalModeGalleryBtn" role="tab" aria-selected="false">
+                Studio Photography
+              </button>
+            </div>
+
+            <div class="stage-3d-viewport" id="modal3dViewport">
+              <!-- Real-time Three.js 3D Canvas -->
+              <canvas
+                id="modalThreeCanvas"
+                class="three-shoe-canvas"
+                aria-label="Interactive 3D shoe inspector. Drag to rotate."
+              ></canvas>
+
+              <!-- Modal GLB Loading Indicator -->
+              <div class="model-loading-overlay" id="modalModelLoading" role="status" aria-live="polite" hidden>
+                <span class="loading-spinner" aria-hidden="true"></span>
+                <span class="loading-title">Loading 3D Sneaker Model...</span>
+                <span class="loading-progress" id="modalLoadingProgress">Preparing mesh</span>
+              </div>
+
+              <!-- Honest High-Res Studio Photography View -->
+              <div class="modal-photo-frame" id="modalPhotoFrame" hidden>
+                <img
+                  src=""
+                  alt=""
+                  id="modal3dImg"
+                  class="stage-3d-img"
+                  referrerpolicy="no-referrer"
+                />
+                <span class="photo-honest-tag">High-Resolution Studio Photo</span>
+              </div>
+
+              <!-- Graceful Fallback if WebGL or GLB unavailable -->
+              <div class="webgl-fallback" id="modalWebglFallback" hidden>
+                <img
+                  src=""
+                  alt=""
+                  id="modalFallbackImg"
+                  class="fallback-shoe-img"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="fallback-notice">
+                  <strong>Studio Photo Fallback</strong>
+                  <span id="modalFallbackReason">3D GLB model unavailable; showing studio photography instead.</span>
+                </div>
+              </div>
+
+              <span class="stage-angle-badge modal-angle-badge" id="modalAngleBadge">360° VIEW · 0°</span>
+              <span class="stage-model-badge modal-model-badge" id="modalModelBadge">3D GLB Sneaker</span>
+            </div>
+
+            <!-- Multiple Image Angle Thumbnails (switches cleanly to Studio Photography) -->
+            <div class="modal-gallery-thumbs" id="modalGalleryThumbs" role="group" aria-label="Studio product photography gallery"></div>
+
+            <!-- 3D Controls (Play/Pause, Reset, 6 Camera Presets, Speed) -->
+            <div class="stage-3d-presets" id="modal3dControlsBar">
+              <div class="preset-btn-group" role="group" aria-label="360-degree camera angles">
+                <button type="button" class="preset-angle-btn" data-modal-view="front">Front</button>
+                <button type="button" class="preset-angle-btn is-active" data-modal-view="right">Right</button>
+                <button type="button" class="preset-angle-btn" data-modal-view="back">Back</button>
+                <button type="button" class="preset-angle-btn" data-modal-view="left">Left</button>
+                <button type="button" class="preset-angle-btn" data-modal-view="top">Top</button>
+                <button type="button" class="preset-angle-btn" data-modal-view="bottom">Bottom</button>
+              </div>
+              <div class="modal-spin-actions">
+                <button type="button" class="stage-spin-btn is-spinning" id="modalSpinToggleBtn" aria-pressed="true">
+                  Pause 360°
+                </button>
+                <button type="button" class="preset-angle-btn" id="modalResetViewBtn">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-3d-info">
+            <p class="modal-3d-meta" id="modal3dMeta"></p>
+            <h2 class="modal-3d-title" id="modal3dTitle"></h2>
+            <div class="modal-price-rating-row">
+              <p class="modal-3d-price" id="modal3dPrice"></p>
+              <span class="modal-3d-rating" id="modal3dRating"></span>
+            </div>
+            <p class="modal-3d-desc" id="modal3dDesc"></p>
+
+            <div class="modal-specs-mini" id="modalSpecsMini"></div>
+
+            <div class="modal-3d-field">
+              <p class="modal-field-label">Colourway: <span id="modal3dColorLabel"></span></p>
+              <div class="swatch-group" id="modal3dSwatches"></div>
+            </div>
+
+            <div class="modal-3d-field">
+              <p class="modal-field-label">Select Size</p>
+              <div class="size-grid-modal" id="modalSizeGrid"></div>
+            </div>
+
+            <div class="modal-action-stack">
+              <button type="button" class="btn btn-primary btn-full" id="modal3dAddBtn">
+                Add to Cart
+              </button>
+              <button type="button" class="btn btn-secondary btn-full modal-pin-hero-btn" id="modalPinHeroBtn">
+                Show This Colourway in Hero 3D
+              </button>
+              <div class="modal-secondary-actions">
+                <button type="button" class="btn btn-secondary modal-sub-btn" id="modalWishlistBtn">
+                  Save to Wishlist
+                </button>
+                <button type="button" class="btn btn-secondary modal-sub-btn" id="modalCompareBtn">
+                  Add to Compare
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Comparison Modal -->
+    <div class="modal-3d-backdrop" id="compareModal" hidden>
+      <div class="modal-compare-dialog" role="dialog" aria-modal="true" aria-labelledby="compareModalTitle">
+        <div class="compare-modal-header">
+          <h2 id="compareModalTitle">SIDE-BY-SIDE SHOE COMPARISON</h2>
+          <button type="button" class="cart-close-btn" id="closeCompareModalBtn" aria-label="Close comparison">
+            ✕
+          </button>
+        </div>
+        <div class="compare-table-wrap" id="compareTableWrap"></div>
+      </div>
+    </div>
+
+    <!-- Non-intrusive Toast Notification -->
+    <div class="toast-banner" id="toastBanner" role="status" aria-live="polite" hidden></div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
